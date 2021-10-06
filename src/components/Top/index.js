@@ -4,6 +4,7 @@ import { GoLinkExternal } from "react-icons/go";
 import { Link } from "react-router-dom";
 import "./Top.scss";
 import { routes } from "../../config/route-config";
+import Percentage from "./Percentage";
 
 const Top = () => {
   return (
@@ -30,7 +31,24 @@ const Top = () => {
           <p>Prezzi aggiornati al 08/06/2021</p>
         </div>
       </div>
-      <div className="top_right">right</div>
+      <div className="top_right">
+        <p className="app_greyFourColor_text app_500_w app_extra_medium_text app_uppercased_text app_mb_1">
+          Costi calcolati su queste percentuali di utilizzo
+        </p>
+        <div className="pacentage_cards app_mb_1">
+          {[...Array(3)].map((_, index) => (
+            <Percentage key={index} />
+          ))}
+        </div>
+        <div className="progress_bars app_mb_1">
+          {[...Array(3)].map((_, index) => (
+            <div key={index} className="progress_bar"></div>
+          ))}
+        </div>
+        <div className="cambia_link">
+          <p className="app_redOneColor_text app_700_w">Cambia percentuali</p>
+        </div>
+      </div>
     </div>
   );
 };
