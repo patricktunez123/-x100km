@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./backgrounds.scss";
+@import "./colors.scss";
+@import "./buttons.scss";
+@import "./typography.scss";
+@import "./paddings.scss";
+@import "./margins.scss";
+@import "./borders.scss";
+@import "./forms.scss";
+@import "./inputs.scss";
+@import "./carousel.scss";
+@import "./cards.scss";
+@import "./icons.scss";
+@import "./sections.scss";
+@import "./drawer.scss";
+@import "./sliders.scss";
+@import "./filter.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #666666;
+  font-weight: 400;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+ul,
+ol,
+dl,
+dir,
+menu,
+blockquote,
+dd,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $redOneColor !important;
+  text-decoration: none !important;
+  &:hover {
+    color: $redTwoColor !important;
+  }
+}
+
+.app_container {
+  min-height: 87vh;
+}
