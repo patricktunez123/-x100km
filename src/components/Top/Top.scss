@@ -2,7 +2,6 @@
 
 .content_top {
   background: #eeeeee;
-  min-height: 40vh;
   display: flex;
   justify-content: space-between;
   padding: 0 5rem;
@@ -14,7 +13,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    width: 30%;
+    min-width: 30%;
 
     .left_currency {
       display: flex;
@@ -49,7 +48,7 @@
   .top_right {
     background: #e5e5e5;
     padding: 1rem 3rem;
-    width: 65%;
+    min-width: 65%;
     display: flex;
     justify-content: center;
     align-items: flex-start;

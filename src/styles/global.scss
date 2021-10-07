@@ -62,3 +62,14 @@ a {
 .app_container {
   min-height: 87vh;
 }
+
+.ant-progress {
+  width: 98%;
+}
+.ant-progress-steps-item {
+  width: 20% !important;
+}
+
+.ant-progress-steps-item-active {
+  background-color: $blueTwoColor;
+}

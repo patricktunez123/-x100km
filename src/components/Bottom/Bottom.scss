@@ -1,0 +1,88 @@
+@import "../../styles/colors.scss";
+
+.content_bottom {
+  padding: 0 5rem;
+  .bottom_header {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left,
+    .right {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 0.5rem;
+    }
+  }
+  .bottom_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .body_left {
+      min-width: 35%;
+    }
+    .body_right {
+      padding-bottom: 2rem;
+      min-width: 65%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      .car_card {
+        width: 100%;
+        border-top: 1.5px solid #cccccc;
+        height: 230px;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .card_left {
+          background-color: $greyOneColor;
+          width: 50%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .card_right {
+          min-width: 50%;
+          height: 100%;
+          padding-left: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-direction: column;
+          .car_info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .car_km {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .car_km_number {
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-end;
+              column-gap: 0.2rem;
+            }
+          }
+        }
+      }
+      .carica {
+        background: #ff5d27;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

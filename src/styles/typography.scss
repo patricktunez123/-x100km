@@ -16,10 +16,16 @@
 .app_extra_medium_text {
   font-size: 1.3rem;
 }
+.app_small_text {
+  font-size: 0.9rem;
+}
 
 //weigths
 .app_200_w {
   font-weight: 200;
+}
+.app_400_w {
+  font-weight: 400;
 }
 .app_500_w {
   font-weight: 500;
@@ -41,7 +47,12 @@
 .app_muted_text {
   color: $greyThreeColor;
 }
-
+.app_blueTwoColor_text {
+  color: $blueTwoColor;
+}
+.app_whiteColor_text {
+  color: $whiteColor;
+}
 // others
 .app_underlined_text {
   text-decoration: underline !important;
