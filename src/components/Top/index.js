@@ -56,9 +56,9 @@ const Top = () => {
           ))}
         </div>
         <div className="progress_bars app_mb_1">
-          {[...Array(3)].map((_, index) => (
-            <div key={index} className="progress_bar"></div>
-          ))}
+          <div className="progress_bar yellow"></div>
+          <div className="progress_bar blue"></div>
+          <div className="progress_bar green"></div>
         </div>
         <div onClick={showModal} className="cambia_link app_cursored">
           <p className="app_redOneColor_text app_700_w">Cambia percentuali</p>
@@ -70,7 +70,6 @@ const Top = () => {
           onCancel={handleCancel}
           footer={false}
           closable={false}
-          width="60vw"
         >
           <div className="model_content">
             <div className="modal_close">
@@ -88,7 +87,7 @@ const Top = () => {
             </p>
             <div className="modal_cards">
               <div></div>
-              <div className="pacentage_cards ">
+              <div className="pacentage_cards modal_perc ">
                 {[...Array(3)].map((_, index) => (
                   <Percentage key={index} />
                 ))}

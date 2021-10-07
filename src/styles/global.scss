@@ -102,10 +102,12 @@ a {
   }
 }
 
+.ant-modal {
+  width: 60vw !important;
+}
 .modal_cards {
   background: #eeeeee;
   border-radius: 10px;
-
   padding: 2rem 0;
   .rc {
     padding: 0 2rem;
@@ -125,5 +127,11 @@ a {
     flex-wrap: wrap;
     padding: 0;
     row-gap: 1rem;
+  }
+  .ant-modal {
+    width: 100% !important;
+  }
+  .modal_cards {
+    padding-left: 1.5rem;
   }
 }

@@ -8,7 +8,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .left,
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+    }
     .right {
       .big_screen {
         display: flex;
@@ -98,6 +103,9 @@
   }
 }
 
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background: #eeeeee !important;
+}
 @media screen and (max-width: $breakpoint-small),
   (max-width: $breakpoint-medium) {
   .content_bottom {

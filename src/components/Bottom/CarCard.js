@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Progress } from "antd";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
-import carImage from "../../images/car.jpg";
+import carImage from "../../images/car2.webp";
 
 const CarCard = () => {
   return (
@@ -10,13 +10,13 @@ const CarCard = () => {
         <img src={carImage} alt="" />
       </div>
       <div className="card_right">
-        <div className="car_name">
+        <div className="car_name app_mb_1">
           <span className="app_700_w app_greyFourColor_text">
             VOLKSWAGEN ECO UP!
           </span>{" "}
           <span className="app_400_w">move 5 porte</span>
         </div>
-        <div className="car_info">
+        <div className="car_info app_mb_2">
           <div>
             <p className="app_small_text">
               Tipo: <span className="app_700_w">Berlina</span>
