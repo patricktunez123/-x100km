@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .app_nav {
   background: #ffffff;
   height: 13vh;
@@ -11,4 +13,16 @@
   left: 0;
   right: 0;
   z-index: 999;
+}
+
+@media screen and (max-width: $breakpoint-small),
+  (max-width: $breakpoint-medium) {
+  .app_nav {
+    padding: 0 1rem;
+    .menus {
+      span {
+        display: none;
+      }
+    }
+  }
 }

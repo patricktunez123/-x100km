@@ -19,11 +19,16 @@ const Bottom = () => {
           <p>Filtra auto</p>
         </div>
         <div className="right">
-          <p>Ordina per</p>
-          <Button>Costo</Button>
-          <Button>Potenza</Button>
-          <Button>Cilindrata</Button>
-          <Button>Marca</Button>
+          <div className="big_screen">
+            <p>Ordina per</p>
+            <Button>Costo</Button>
+            <Button>Potenza</Button>
+            <Button>Cilindrata</Button>
+            <Button>Marca</Button>
+          </div>
+          <div className="small_screen">
+            <p>Select</p>
+          </div>
         </div>
       </div>
       <div className="bottom_body">

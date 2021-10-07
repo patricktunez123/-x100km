@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 import "./Nav.scss";
 
 const Nav = () => {
@@ -11,9 +12,9 @@ const Nav = () => {
           <p>...</p>
         </div>
       </div>
-      <div>
-        <p>Menu</p>
-        <p>icon</p>
+      <div className="menus">
+        <span>Menu</span>
+        <AiOutlineMenu />
       </div>
     </div>
   );

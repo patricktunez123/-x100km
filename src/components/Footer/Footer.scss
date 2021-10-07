@@ -1,8 +1,9 @@
 @import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 .footer {
   background: #333333;
-  height: 10rem;
+  min-height: 10rem;
   padding: 0 5rem;
   display: flex;
   justify-content: center;
@@ -34,5 +35,23 @@
   }
   .footer_bottom {
     padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: $breakpoint-small),
+  (max-width: $breakpoint-medium) {
+  .footer {
+    padding: 0 1rem;
+    .footer_top {
+      flex-direction: column;
+      padding-top: 1rem;
+      .top_left {
+        display: inline-block;
+        padding: 0.5rem 0;
+      }
+    }
+    .footer_bottom {
+      padding-bottom: 1rem;
+    }
   }
 }

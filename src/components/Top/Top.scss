@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 .content_top {
   background: #eeeeee;
@@ -98,6 +99,26 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-small),
+  (max-width: $breakpoint-medium) {
+  .content_top {
+    flex-direction: column;
+    padding: 0 1rem;
+    .top_left {
+      width: 100%;
+    }
+    .top_right {
+      width: 100%;
+      padding: 0 0.5rem;
+      .pacentage_cards {
+        flex-wrap: wrap;
+        padding: 0;
+        row-gap: 1rem;
+      }
     }
   }
 }

@@ -10,7 +10,7 @@ const CarCard = () => {
         <img src={carImage} alt="" />
       </div>
       <div className="card_right">
-        <div>
+        <div className="car_name">
           <span className="app_700_w app_greyFourColor_text">
             VOLKSWAGEN ECO UP!
           </span>{" "}
