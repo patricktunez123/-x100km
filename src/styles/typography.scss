@@ -1,0 +1,75 @@
+@import "./colors.scss";
+
+//sizes
+.app_big_text {
+  font-size: 6rem;
+}
+
+.app_3_text {
+  font-size: 3rem;
+}
+
+.app_medium_text {
+  font-size: 1.8rem;
+}
+
+.app_extra_medium_text {
+  font-size: 1.3rem;
+}
+.app_small_text {
+  font-size: 0.9rem;
+}
+.app_extra_small_text {
+  font-size: 0.7rem;
+}
+
+//weigths
+.app_200_w {
+  font-weight: 200;
+}
+.app_400_w {
+  font-weight: 400;
+}
+.app_500_w {
+  font-weight: 500;
+}
+.app_700_w {
+  font-weight: 700;
+}
+.app_900_w {
+  font-weight: 900;
+}
+
+// colors
+.app_redOneColor_text {
+  color: $redOneColor;
+}
+.app_greyFourColor_text {
+  color: $greyFourColor;
+}
+.app_yellowColor_text {
+  color: $yellowColor;
+}
+.app_muted_text {
+  color: $greyThreeColor;
+}
+.app_blueTwoColor_text {
+  color: $blueTwoColor;
+}
+.app_whiteColor_text {
+  color: $whiteColor;
+}
+.app_greySixColor_text {
+  color: $greySixColor;
+}
+// others
+.app_underlined_text {
+  text-decoration: underline !important;
+}
+
+.app_uppercased_text {
+  text-transform: uppercase;
+}
+.app_cursored {
+  cursor: pointer;
+}

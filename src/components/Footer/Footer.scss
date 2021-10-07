@@ -1,0 +1,57 @@
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
+
+.footer {
+  background: #333333;
+  min-height: 10rem;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  .footer_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid $greyThreeColor;
+    .top_left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 0.4rem;
+    }
+    .top_right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+      .icon {
+        color: $whiteColor;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .footer_bottom {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: $breakpoint-small),
+  (max-width: $breakpoint-medium) {
+  .footer {
+    padding: 0 1rem;
+    .footer_top {
+      flex-direction: column;
+      padding-top: 1rem;
+      .top_left {
+        display: inline-block;
+        padding: 0.5rem 0;
+      }
+    }
+    .footer_bottom {
+      padding-bottom: 1rem;
+    }
+  }
+}
