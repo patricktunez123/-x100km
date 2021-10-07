@@ -1,8 +1,14 @@
 import React from "react";
 import { RiListSettingsFill } from "react-icons/ri";
-import { Button } from "antd";
+import { Button, Collapse } from "antd";
 import "./Bottom.scss";
 import CarCard from "./CarCard";
+import Panel1 from "./Panels/Panel1";
+import Panel2 from "./Panels/Panel2";
+import Panel3 from "./Panels/Panel3";
+import Panel4 from "./Panels/Panel4";
+
+const { Panel } = Collapse;
 
 const Bottom = () => {
   return (
@@ -21,7 +27,22 @@ const Bottom = () => {
         </div>
       </div>
       <div className="bottom_body">
-        <div className="body_left">left</div>
+        <div className="body_left">
+          <Collapse defaultActiveKey={["1", "2", "3", "4"]} ghost>
+            <Panel header="fascia di costo 100 km" key="1">
+              <Panel1 />
+            </Panel>
+            <Panel header="ALIMENTAZIONE" key="2">
+              <Panel2 />
+            </Panel>
+            <Panel header="tipo auto" key="3">
+              <Panel3 />
+            </Panel>
+            <Panel header="marca" key="4">
+              <Panel4 />
+            </Panel>
+          </Collapse>
+        </div>
         <div className="body_right">
           {[...Array(6)].map((_, index) => (
             <CarCard key={index} />

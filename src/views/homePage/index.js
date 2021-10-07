@@ -2,6 +2,7 @@ import React from "react";
 import Bottom from "../../components/Bottom";
 import Nav from "../../components/Nav";
 import Top from "../../components/Top";
+import Footer from "../../components/Footer";
 import "./homePage.scss";
 
 const HomePage = () => {
@@ -12,6 +13,7 @@ const HomePage = () => {
         <Top />
         <Bottom />
       </div>
+      <Footer />
     </>
   );
 };
