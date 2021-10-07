@@ -56,6 +56,9 @@
 .app_whiteColor_text {
   color: $whiteColor;
 }
+.app_greySixColor_text {
+  color: $greySixColor;
+}
 // others
 .app_underlined_text {
   text-decoration: underline !important;
@@ -63,4 +66,7 @@
 
 .app_uppercased_text {
   text-transform: uppercase;
+}
+.app_cursored {
+  cursor: pointer;
 }

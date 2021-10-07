@@ -13,6 +13,29 @@
   left: 0;
   right: 0;
   z-index: 999;
+  .logo {
+    height: 100%;
+    cursor: pointer;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .menus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+
+    color: #adadad;
+    text-transform: uppercase;
+    font-weight: 200;
+    .icon {
+      font-size: 1.3rem;
+    }
+  }
 }
 
 @media screen and (max-width: $breakpoint-small),
