@@ -52,6 +52,9 @@ fieldset {
   margin: 0;
 }
 
+.padding-0 {
+  padding: 0.2rem;
+}
 a {
   color: $redOneColor !important;
   text-decoration: none !important;
@@ -98,13 +101,11 @@ a {
   padding: 0 2rem;
   .percentage_card {
     background: $whiteColor;
-    width: 90%;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0.2rem 0;
     .percentage {
       display: flex;
       justify-content: flex-start;
