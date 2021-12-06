@@ -42,12 +42,14 @@
   (max-width: $breakpoint-medium) {
   .footer {
     padding: 0 1rem;
+    padding-bottom: 5.5rem;
     .footer_top {
       flex-direction: column;
       padding-top: 1rem;
       .top_left {
         display: inline-block;
         padding: 0.5rem 0;
+        text-align: center;
       }
     }
     .footer_bottom {

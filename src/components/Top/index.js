@@ -98,9 +98,19 @@ const Top = () => {
             <div className="modal_cards">
               <div></div>
               <div className="pacentage_cards modal_perc ">
-                {[...Array(3)].map((_, index) => (
-                  <PercentageYello key={index} />
-                ))}
+                <div class="container">
+                  <div className="row">
+                    <div className="col-md-4 col-lg-4 col-4 padding-0">
+                      <PercentageYello />
+                    </div>
+                    <div className="col-md-4 col-lg-4 col-4 padding-0">
+                      <PercentageBlue />
+                    </div>
+                    <div className="col-md-4 col-lg-4 col-4 padding-0">
+                      <PercentageGreen />
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="rc">
                 <div className="ricalcola_div app_mt_2">
