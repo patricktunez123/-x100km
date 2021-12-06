@@ -13,6 +13,14 @@
   left: 0;
   right: 0;
   z-index: 999;
+  .loader {
+    background: #ff5d27;
+    height: 4px;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   .logo {
     height: 100%;
     cursor: pointer;
@@ -33,7 +41,7 @@
     text-transform: uppercase;
     font-weight: 200;
     .icon {
-      font-size: 1.3rem;
+      font-size: 3.5rem;
     }
   }
 }
@@ -42,6 +50,7 @@
   (max-width: $breakpoint-medium) {
   .app_nav {
     padding: 0 1rem;
+    height: 10vh;
     .menus {
       span {
         display: none;
