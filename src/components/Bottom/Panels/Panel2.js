@@ -6,17 +6,30 @@ const Panel2 = () => {
     console.log(`checked = ${e.target.checked}`);
   };
   return (
-    <div className="panelOne">
-      <Radio>Radio</Radio>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
-      <Checkbox onChange={onChange}>Checkbox</Checkbox>
+    <div className="row">
+      <div className="col-12">
+        <p>
+          <Radio className="app_400_w text_18 app_greyFourColor_text">
+            Radio
+          </Radio>
+        </p>
+        <p>
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Checkbox
+          </Checkbox>
+        </p>
+        <p>
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Checkbox
+          </Checkbox>
+        </p>
+      </div>
     </div>
   );
 };

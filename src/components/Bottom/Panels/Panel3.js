@@ -7,17 +7,70 @@ const Panel3 = () => {
   };
   return (
     <div className="row">
-      <div className="col-md-6 col-lg-6 col-12">
-        <Radio>Radio</Radio>
-        <Checkbox onChange={onChange}>Checkbox</Checkbox>
-        <Checkbox onChange={onChange}>Checkbox</Checkbox>
-        <Checkbox onChange={onChange}>Checkbox</Checkbox>
+      <div className="col-md-6 col-lg-6 col-6">
+        <p>
+          <Radio className="app_400_w text_18 app_greyFourColor_text">
+            Radio
+          </Radio>
+        </p>
+        <p>
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Checkbox
+          </Checkbox>
+        </p>
+        <p>
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Checkbox
+          </Checkbox>
+        </p>
+        <p>
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Checkbox
+          </Checkbox>
+        </p>
       </div>
-      <div className="col-md-6 col-lg-6 col-12">
-        <Checkbox onChange={onChange}>Checkbox</Checkbox>
-        <Checkbox onChange={onChange}>Checkbox</Checkbox>
-        <Checkbox onChange={onChange}>Checkbox</Checkbox>
-        <Checkbox onChange={onChange}>Checkbox</Checkbox>
+      <div className="col-md-6 col-lg-6 col-6">
+        <p>
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Checkbox
+          </Checkbox>
+        </p>
+        <p>
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Checkbox
+          </Checkbox>
+        </p>
+        <p>
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Checkbox
+          </Checkbox>
+        </p>
+        <p>
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Checkbox
+          </Checkbox>
+        </p>
       </div>
     </div>
   );

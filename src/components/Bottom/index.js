@@ -46,7 +46,11 @@ const Bottom = () => {
       </div>
       <div className="bottom_body">
         <div className="body_left">
-          <Collapse defaultActiveKey={["1", "2", "3", "4"]} ghost>
+          <Collapse
+            defaultActiveKey={["1", "2", "3", "4"]}
+            ghost
+            expandIconPosition="right"
+          >
             <Panel header="fascia di costo 100 km" key="1">
               <Panel1 />
             </Panel>

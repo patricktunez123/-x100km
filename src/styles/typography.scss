@@ -5,6 +5,18 @@
   font-size: 6rem;
 }
 
+.text_32 {
+  font-size: 32px;
+}
+.text_22 {
+  font-size: 22px;
+}
+.text_28 {
+  font-size: 28px;
+}
+.text_18 {
+  font-size: 18px;
+}
 .app_3_text {
   font-size: 3rem;
 }
@@ -35,6 +47,9 @@
 }
 .app_700_w {
   font-weight: 700;
+}
+.app_800_w {
+  font-weight: 800;
 }
 .app_900_w {
   font-weight: 900;
@@ -72,4 +87,14 @@
 }
 .app_cursored {
   cursor: pointer;
+}
+
+.ant-collapse-content-box {
+  border-bottom: 1px solid #cccccc;
+}
+.ant-collapse-header {
+  font-weight: 700 !important;
+  font-size: 21px !important;
+  text-transform: uppercase !important;
+  color: #ff5d27 !important;
 }
