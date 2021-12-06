@@ -8,7 +8,6 @@ import Car3 from "./DamyData/Car3";
 import Car4 from "./DamyData/Car4";
 import Car5 from "./DamyData/Car5";
 import Car6 from "./DamyData/Car6";
-import Car7 from "./DamyData/Car7";
 import Panel1 from "./Panels/Panel1";
 import Panel2 from "./Panels/Panel2";
 import Panel3 from "./Panels/Panel3";
@@ -80,7 +79,6 @@ const Bottom = () => {
           <Car4 />
           <Car5 />
           <Car6 />
-          <Car7 />
           <div className="carica">
             <p className="app_uppercased_text app_700_w app_whiteColor_text">
               carica altre auto

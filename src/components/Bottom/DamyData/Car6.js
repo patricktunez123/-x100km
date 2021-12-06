@@ -29,7 +29,7 @@ const Car6 = () => {
             </p>
           </div>
           <div>
-            <Button className="app_large_btn">gpl</Button>
+            <Button className="app_large_btn app_large_btn_red">benzina</Button>
           </div>
         </div>
         <div className="car_km">

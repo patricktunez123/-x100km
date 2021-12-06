@@ -29,7 +29,7 @@ const Car2 = () => {
             </p>
           </div>
           <div>
-            <Button className="app_large_btn">gpl</Button>
+            <Button className="app_large_btn app_large_btn_blue2">gpl</Button>
           </div>
         </div>
         <div className="car_km">

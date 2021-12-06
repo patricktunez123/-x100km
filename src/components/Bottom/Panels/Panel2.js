@@ -8,25 +8,82 @@ const Panel2 = () => {
   return (
     <div className="row">
       <div className="col-12">
-        <p>
+        <p className="mb-2">
           <Radio className="app_400_w text_18 app_greyFourColor_text">
-            Radio
+            Tutte
           </Radio>
         </p>
-        <p>
+        <p className="mb-2">
           <Checkbox
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
           >
-            Checkbox
+            Benzina <span className="app_redOneColor_text">(123)</span>
           </Checkbox>
         </p>
-        <p>
+        <p className="mb-2">
           <Checkbox
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
           >
-            Checkbox
+            Gasolio <span className="app_greenOneColor_text">(71)</span>
+          </Checkbox>
+        </p>
+        <p className="mb-2">
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Mild Hybrid Benzina{" "}
+            <span className="app_greenOneColor_text">(21)</span>
+          </Checkbox>
+        </p>
+        <p className="mb-2">
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Mild Hybrid Diesel (5)
+          </Checkbox>
+        </p>
+        <p className="mb-2">
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Full Hybrid (15)
+          </Checkbox>
+        </p>
+        <p className="mb-2">
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Plug-in Hybrid (34)
+          </Checkbox>
+        </p>
+        <p className="mb-2">
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Elettrica (34)
+          </Checkbox>
+        </p>
+        <p className="mb-2">
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            GPL (6)
+          </Checkbox>
+        </p>
+        <p className="mb-2">
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Metano (6)
           </Checkbox>
         </p>
       </div>

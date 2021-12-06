@@ -31,7 +31,7 @@ const Top = () => {
           <img src={cur} alt="" />
         </div>
         <p className="app_400_w app_greyFiveColor_text">
-          I costi chilometrici relativi alle auto provate dal 2016 ad oggi.{" "}
+          I costi chometrici rela oggi.{" "}
           <Link className="app_underlined_text" to={routes.home.url}>
             Più informazioni
           </Link>

@@ -8,12 +8,12 @@ const Panel3 = () => {
   return (
     <div className="row">
       <div className="col-md-6 col-lg-6 col-6">
-        <p>
+        <p className="mb-2">
           <Radio className="app_400_w text_18 app_greyFourColor_text">
             Radio
           </Radio>
         </p>
-        <p>
+        <p className="mb-2">
           <Checkbox
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
@@ -21,7 +21,7 @@ const Panel3 = () => {
             Checkbox
           </Checkbox>
         </p>
-        <p>
+        <p className="mb-2">
           <Checkbox
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
@@ -29,7 +29,7 @@ const Panel3 = () => {
             Checkbox
           </Checkbox>
         </p>
-        <p>
+        <p className="mb-2">
           <Checkbox
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
@@ -39,7 +39,7 @@ const Panel3 = () => {
         </p>
       </div>
       <div className="col-md-6 col-lg-6 col-6">
-        <p>
+        <p className="mb-2">
           <Checkbox
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
@@ -47,7 +47,7 @@ const Panel3 = () => {
             Checkbox
           </Checkbox>
         </p>
-        <p>
+        <p className="mb-2">
           <Checkbox
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
@@ -55,7 +55,7 @@ const Panel3 = () => {
             Checkbox
           </Checkbox>
         </p>
-        <p>
+        <p className="mb-2">
           <Checkbox
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
@@ -63,7 +63,7 @@ const Panel3 = () => {
             Checkbox
           </Checkbox>
         </p>
-        <p>
+        <p className="mb-2">
           <Checkbox
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
