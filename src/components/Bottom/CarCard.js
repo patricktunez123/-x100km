@@ -11,20 +11,20 @@ const CarCard = () => {
       </div>
       <div className="card_right">
         <div className="car_name app_mb_1">
-          <span className="app_700_w app_greyFourColor_text">
+          <span className="app_700_w app_greyFourColor_text text_24">
             VOLKSWAGEN ECO UP!
           </span>{" "}
-          <span className="app_400_w">move 5 porte</span>
+          <span className="app_400_w text_24">move 5 porte</span>
         </div>
         <div className="car_info app_mb_2">
           <div>
-            <p className="app_small_text">
+            <p className="text_16">
               Tipo: <span className="app_700_w">Berlina</span>
             </p>
-            <p className="app_small_text">
+            <p className="text_16">
               Potenza: <span className="app_700_w">150CV | 110kW</span>
             </p>
-            <p className="app_small_text">
+            <p className="text_16">
               Cilindrata: <span className="app_700_w">1395 cm3</span>
             </p>
           </div>
@@ -34,10 +34,8 @@ const CarCard = () => {
         </div>
         <div className="car_km">
           <div className="car_km_number">
-            <p className="app_700_w app_blueTwoColor_text app_extra_medium_text">
-              3,85{" "}
-            </p>
-            <p className="app_small_text mb-1">€x100km per le tue abitudini</p>
+            <p className="app_700_w app_blueTwoColor_text text_24">3,85 </p>
+            <p className="text_16 mb-1">€x100km per le tue abitudini</p>
           </div>
           <AiOutlineExclamationCircle />
         </div>

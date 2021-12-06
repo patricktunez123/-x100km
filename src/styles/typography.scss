@@ -8,6 +8,9 @@
 .text_32 {
   font-size: 32px;
 }
+.text_24 {
+  font-size: 24px;
+}
 .text_22 {
   font-size: 22px;
 }
@@ -16,6 +19,9 @@
 }
 .text_18 {
   font-size: 18px;
+}
+.text_16 {
+  font-size: 16px;
 }
 .app_3_text {
   font-size: 3rem;
@@ -103,4 +109,28 @@
   font-size: 21px !important;
   text-transform: uppercase !important;
   color: #ff5d27 !important;
+}
+
+.link_container {
+  background: $greyThreeColor;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon_link {
+    font-size: 1.8rem;
+  }
+}
+
+.small_screen {
+  .ant-select-selector {
+    border-color: transparent !important;
+    border-radius: 10px !important;
+    height: 40px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
 }

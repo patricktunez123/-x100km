@@ -1,5 +1,5 @@
 import React from "react";
-import { RiListSettingsFill } from "react-icons/ri";
+import { BiLinkExternal } from "react-icons/bi";
 import { Button, Collapse, Select } from "antd";
 import "./Bottom.scss";
 import CarCard from "./CarCard";
@@ -20,8 +20,10 @@ const Bottom = () => {
     <div className="content_bottom">
       <div className="bottom_header">
         <div className="left">
-          <RiListSettingsFill className="app_redOneColor_text" />
-          <p className="app_900_w app_greyFourColor_text">Filtra auto</p>
+          <div className="link_container">
+            <BiLinkExternal className="icon_link" />
+          </div>
+          <p className="app_700_w app_muted_text">Info prezzi</p>
         </div>
         <div className="right">
           <div className="big_screen">
