@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Modal } from "antd";
-import { MdEuro } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoLinkExternal } from "react-icons/go";
 import { Link } from "react-router-dom";
 import "./Top.scss";
 import { routes } from "../../config/route-config";
 import Percentage from "./Percentage";
+import cur from "../../images/currency.png";
 
 const Top = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -26,14 +26,9 @@ const Top = () => {
     <div className="content_top">
       <div className="top_left">
         <div className="left_currency">
-          <MdEuro className="app_big_text app_redOneColor_text" />
-          <p className="app_big_text app_redOneColor_text">X</p>
-          <div className="app_km">
-            <p className="app_medium_text app_redOneColor_text">100</p>
-            <p className="app_medium_text app_redOneColor_text">KM</p>
-          </div>
+          <img src={cur} alt="" />
         </div>
-        <p className="app_mb_2">
+        <p className="app_400_w app_greyFiveColor_text">
           I costi chilometrici relativi alle auto provate dal 2016 ad oggi.{" "}
           <Link className="app_underlined_text" to={routes.home.url}>
             Più informazioni
