@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, Progress } from "antd";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
-import carImage from "../../images/car2.webp";
+import carImage from "../../../images/car2.webp";
 
-const CarCard = () => {
+const Car4 = () => {
   return (
     <div className="car_card">
       <div className="card_left">
@@ -29,20 +29,32 @@ const CarCard = () => {
             </p>
           </div>
           <div>
-            <Button className="app_large_btn">gpl</Button>
+            <Button className="app_large_btn app_large_btn_blue1">gpl</Button>
           </div>
         </div>
-        <div className="car_km">
-          <div className="car_km_number">
-            <p className="app_700_w app_blueTwoColor_text text_24">3,85 </p>
-            <p className="text_16 mb-1">€x100km per le tue abitudini</p>
+        <>
+          <div className="car_km">
+            <div className="car_km_number">
+              <p className="app_700_w app_blueTwoColor_text text_24">3,85 </p>
+              <p className="text_16 mb-1">€x100km per le tue abitudini</p>
+            </div>
+            <AiOutlineExclamationCircle />
           </div>
-          <AiOutlineExclamationCircle />
-        </div>
-        <Progress percent={45} steps={5} showInfo={false} />
+          <Progress percent={45} steps={5} showInfo={false} />
+        </>
+        <>
+          <div className="car_km mt-4">
+            <div className="car_km_number">
+              <p className="app_700_w app_blueTwoColor_text text_24">3,85 </p>
+              <p className="text_16 mb-1">€x100km per le tue abitudini</p>
+            </div>
+            <AiOutlineExclamationCircle />
+          </div>
+          <Progress percent={45} steps={5} showInfo={false} />
+        </>
       </div>
     </div>
   );
 };
 
-export default CarCard;
+export default Car4;

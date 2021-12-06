@@ -52,6 +52,9 @@ fieldset {
   margin: 0;
 }
 
+.padding-0 {
+  padding: 0.2rem;
+}
 a {
   color: $redOneColor !important;
   text-decoration: none !important;
@@ -64,6 +67,21 @@ a {
   min-height: 87vh;
 }
 
+.modal_close {
+  background: $redOneColor;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 1000px;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 .ant-progress {
   width: 98%;
 }
@@ -83,13 +101,11 @@ a {
   padding: 0 2rem;
   .percentage_card {
     background: $whiteColor;
-    width: 90%;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0.2rem 0;
     .percentage {
       display: flex;
       justify-content: flex-start;
@@ -108,7 +124,7 @@ a {
 .modal_cards {
   background: #eeeeee;
   border-radius: 10px;
-  padding: 2rem 0;
+  padding: 1rem;
   .rc {
     padding: 0 2rem;
     .ricalcola_div {

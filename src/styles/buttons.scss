@@ -1,12 +1,26 @@
 .app_large_btn {
   border-radius: none !important;
-  padding: 1.5rem 2.5rem !important;
+  padding: 2rem 2.5rem !important;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  border: 1.4px solid #005999 !important;
   text-transform: uppercase !important;
   font-weight: 700 !important;
+}
+.app_large_btn_red {
+  border: 1.4px solid #e20000 !important;
+  color: #e20000 !important;
+}
+.app_large_btn_green {
+  border: 1.4px solid #009933 !important;
+  color: #009933 !important;
+}
+.app_large_btn_blue1 {
+  border: 1.4px solid #009ee3 !important;
+  color: #009ee3 !important;
+}
+.app_large_btn_blue2 {
+  border: 1.4px solid #005999 !important;
   color: #005999 !important;
 }
 .fileter_btn_active {

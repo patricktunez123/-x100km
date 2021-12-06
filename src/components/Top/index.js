@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Modal } from "antd";
-import { MdEuro } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoLinkExternal } from "react-icons/go";
 import { Link } from "react-router-dom";
 import "./Top.scss";
 import { routes } from "../../config/route-config";
-import Percentage from "./Percentage";
+import PercentageYello from "./PercentageYello";
+import PercentageBlue from "./PercentageBlue";
+import PercentageGreen from "./PercentageGreen";
+import cur from "../../images/currency.png";
 
 const Top = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -26,15 +28,10 @@ const Top = () => {
     <div className="content_top">
       <div className="top_left">
         <div className="left_currency">
-          <MdEuro className="app_big_text app_redOneColor_text" />
-          <p className="app_big_text app_redOneColor_text">X</p>
-          <div className="app_km">
-            <p className="app_medium_text app_redOneColor_text">100</p>
-            <p className="app_medium_text app_redOneColor_text">KM</p>
-          </div>
+          <img src={cur} alt="" />
         </div>
-        <p className="app_mb_2">
-          I costi chilometrici relativi alle auto provate dal 2016 ad oggi.{" "}
+        <p className="app_400_w app_greyFiveColor_text">
+          I costi chometrici rela oggi.{" "}
           <Link className="app_underlined_text" to={routes.home.url}>
             Più informazioni
           </Link>
@@ -48,20 +45,33 @@ const Top = () => {
       </div>
       <div className="top_right">
         <p className="app_greyFourColor_text app_500_w app_extra_medium_text app_uppercased_text app_mb_1">
-          Costi calcolati su queste percentuali di utilizzo
+          Costi calcolati <br /> su queste percentuali di utilizzo
         </p>
         <div className="pacentage_cards app_mb_1">
-          {[...Array(3)].map((_, index) => (
-            <Percentage key={index} />
-          ))}
+          <div class="container">
+            <div className="row">
+              <div className="col-md-4 col-lg-4 col-4 padding-0">
+                <PercentageYello />
+              </div>
+              <div className="col-md-4 col-lg-4 col-4 padding-0">
+                <PercentageBlue />
+              </div>
+              <div className="col-md-4 col-lg-4 col-4 padding-0">
+                <PercentageGreen />
+              </div>
+            </div>
+          </div>
+          <div className="progress_bars app_mb_1">
+            <div className="progress_bar yellow"></div>
+            <div className="progress_bar blue"></div>
+            <div className="progress_bar green"></div>
+          </div>
         </div>
-        <div className="progress_bars app_mb_1">
-          <div className="progress_bar yellow"></div>
-          <div className="progress_bar blue"></div>
-          <div className="progress_bar green"></div>
-        </div>
+
         <div onClick={showModal} className="cambia_link app_cursored">
-          <p className="app_redOneColor_text app_700_w">Cambia percentuali</p>
+          <p className="app_redOneColor_text app_700_w text_18">
+            Cambia percentuali
+          </p>
         </div>
         <Modal
           title=""
@@ -88,9 +98,19 @@ const Top = () => {
             <div className="modal_cards">
               <div></div>
               <div className="pacentage_cards modal_perc ">
-                {[...Array(3)].map((_, index) => (
-                  <Percentage key={index} />
-                ))}
+                <div class="container">
+                  <div className="row">
+                    <div className="col-md-4 col-lg-4 col-4 padding-0">
+                      <PercentageYello />
+                    </div>
+                    <div className="col-md-4 col-lg-4 col-4 padding-0">
+                      <PercentageBlue />
+                    </div>
+                    <div className="col-md-4 col-lg-4 col-4 padding-0">
+                      <PercentageGreen />
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="rc">
                 <div className="ricalcola_div app_mt_2">

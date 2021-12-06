@@ -1,8 +1,13 @@
 import React from "react";
-import { RiListSettingsFill } from "react-icons/ri";
+import { BiLinkExternal } from "react-icons/bi";
 import { Button, Collapse, Select } from "antd";
 import "./Bottom.scss";
-import CarCard from "./CarCard";
+import Car1 from "./DamyData/Car1";
+import Car2 from "./DamyData/Car2";
+import Car3 from "./DamyData/Car3";
+import Car4 from "./DamyData/Car4";
+import Car5 from "./DamyData/Car5";
+import Car6 from "./DamyData/Car6";
 import Panel1 from "./Panels/Panel1";
 import Panel2 from "./Panels/Panel2";
 import Panel3 from "./Panels/Panel3";
@@ -20,8 +25,10 @@ const Bottom = () => {
     <div className="content_bottom">
       <div className="bottom_header">
         <div className="left">
-          <RiListSettingsFill className="app_redOneColor_text" />
-          <p className="app_900_w app_greyFourColor_text">Filtra auto</p>
+          <div className="link_container">
+            <BiLinkExternal className="icon_link" />
+          </div>
+          <p className="app_700_w app_muted_text">Info prezzi</p>
         </div>
         <div className="right">
           <div className="big_screen">
@@ -46,7 +53,11 @@ const Bottom = () => {
       </div>
       <div className="bottom_body">
         <div className="body_left">
-          <Collapse defaultActiveKey={["1", "2", "3", "4"]} ghost>
+          <Collapse
+            defaultActiveKey={["1", "2", "3", "4"]}
+            ghost
+            expandIconPosition="right"
+          >
             <Panel header="fascia di costo 100 km" key="1">
               <Panel1 />
             </Panel>
@@ -62,9 +73,12 @@ const Bottom = () => {
           </Collapse>
         </div>
         <div className="body_right">
-          {[...Array(6)].map((_, index) => (
-            <CarCard key={index} />
-          ))}
+          <Car1 />
+          <Car2 />
+          <Car3 />
+          <Car4 />
+          <Car5 />
+          <Car6 />
           <div className="carica">
             <p className="app_uppercased_text app_700_w app_whiteColor_text">
               carica altre auto

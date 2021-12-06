@@ -1,0 +1,75 @@
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
+
+.menu_bottom {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  background: #ff5d27;
+  width: 100%;
+  height: 10vh;
+  color: #ffffff;
+  padding: 0 1rem;
+}
+
+.modal_menus {
+  margin-top: 2rem;
+}
+.ant-drawer-body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  .drawer_bottom {
+    background: #ff5d27;
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    h6 {
+      color: #ffffff;
+    }
+  }
+}
+.d_content {
+  padding: 2rem 0;
+  .d_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2rem 0;
+    .drawer_close {
+      background: $redOneColor;
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 1000px;
+      color: #fff;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  h6 {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: $breakpoint-small),
+  (max-width: $breakpoint-medium) {
+  .menu_bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 6rem;
+    font-size: 28px;
+  }
+}

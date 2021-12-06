@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, Progress } from "antd";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
-import carImage from "../../images/car2.webp";
+import carImage from "../../../images/car2.webp";
 
-const CarCard = () => {
+const Car2 = () => {
   return (
     <div className="car_card">
       <div className="card_left">
@@ -29,7 +29,7 @@ const CarCard = () => {
             </p>
           </div>
           <div>
-            <Button className="app_large_btn">gpl</Button>
+            <Button className="app_large_btn app_large_btn_blue2">gpl</Button>
           </div>
         </div>
         <div className="car_km">
@@ -45,4 +45,4 @@ const CarCard = () => {
   );
 };
 
-export default CarCard;
+export default Car2;
