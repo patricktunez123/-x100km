@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Modal } from "antd";
-import { AiOutlineClose } from "react-icons/ai";
 import { GoLinkExternal } from "react-icons/go";
 import { Link } from "react-router-dom";
 import "./Top.scss";
@@ -9,19 +7,15 @@ import PercentageYello from "./PercentageYello";
 import PercentageBlue from "./PercentageBlue";
 import PercentageGreen from "./PercentageGreen";
 import cur from "../../images/currency.png";
+import TheDrawer from "./TheDrawer";
 
 const Top = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const showModal = () => {
-    setIsModalVisible(true);
+  const [visible, setVisible] = useState(false);
+  const showDrawer = () => {
+    setVisible(true);
   };
-
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
+  const onClose = () => {
+    setVisible(false);
   };
 
   return (
@@ -68,58 +62,12 @@ const Top = () => {
           </div>
         </div>
 
-        <div onClick={showModal} className="cambia_link app_cursored">
+        <div onClick={showDrawer} className="cambia_link app_cursored">
           <p className="app_redOneColor_text app_700_w text_18">
             Cambia percentuali
           </p>
         </div>
-        <Modal
-          title=""
-          visible={isModalVisible}
-          onOk={handleOk}
-          onCancel={handleCancel}
-          footer={false}
-          closable={false}
-        >
-          <div className="model_content">
-            <div className="modal_close">
-              <p onClick={handleCancel}>
-                <AiOutlineClose />
-              </p>
-            </div>
-            <p className="app_700_w app_greyFourColor_text app_medium_text app_mb_1 text-center">
-              Dove usi l’auto?
-            </p>
-            <p className="app_400_w app_mb_2 text-center">
-              Utilizza i <Link to="/">cursori</Link> per modificare le
-              percentuali relative al tipo di percorso che fai abitualmente, una
-              volta impostati i valori clicca su <Link to="/">Ricalcola</Link>
-            </p>
-            <div className="modal_cards">
-              <div></div>
-              <div className="pacentage_cards modal_perc ">
-                <div class="container">
-                  <div className="row">
-                    <div className="col-md-4 col-lg-4 col-4 padding-0">
-                      <PercentageYello />
-                    </div>
-                    <div className="col-md-4 col-lg-4 col-4 padding-0">
-                      <PercentageBlue />
-                    </div>
-                    <div className="col-md-4 col-lg-4 col-4 padding-0">
-                      <PercentageGreen />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="rc">
-                <div className="ricalcola_div app_mt_2">
-                  <p className="app_greySixColor_text app_700_w">Ricalcola</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Modal>
+        <TheDrawer onClose={onClose} visible={visible} />
       </div>
     </div>
   );

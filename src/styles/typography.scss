@@ -105,7 +105,7 @@
 }
 
 .ant-collapse-content-box {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1.9px solid #c1c1c1;
 }
 .ant-collapse-header {
   font-weight: 700 !important;
@@ -140,4 +140,28 @@
 
 .car3_txt_color {
   color: #009ee3;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: #ff5d27 !important ;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+  background-color: #ff5d27;
+}
+
+.ant-radio:hover .ant-radio-inner {
+  border-color: #ff5d27;
+}
+
+.c818181color {
+  color: #818181;
+}
+
+.CCCCCC_txt {
+  color: #cccccc;
+}
+
+.t3E97FF_text {
+  color: #3e97ff;
 }

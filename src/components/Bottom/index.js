@@ -1,13 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BiLinkExternal } from "react-icons/bi";
 import { Button, Collapse, Select } from "antd";
+import { useSelector, useDispatch } from "react-redux";
 import "./Bottom.scss";
-import Car1 from "./DamyData/Car1";
-import Car2 from "./DamyData/Car2";
-import Car3 from "./DamyData/Car3";
-import Car4 from "./DamyData/Car4";
-import Car5 from "./DamyData/Car5";
-import Car6 from "./DamyData/Car6";
+import { getCars } from "../../redux/actions/carActions";
+import { CardLoader } from "../../components/Loaders";
+import CarCard from "./CarCard";
 import Panel1 from "./Panels/Panel1";
 import Panel2 from "./Panels/Panel2";
 import Panel3 from "./Panels/Panel3";
@@ -21,6 +19,11 @@ const Bottom = () => {
   //   console.log(`selected ${value}`);
   // }
 
+  const dispatch = useDispatch();
+  const { data, loading } = useSelector((state) => state.Cars);
+  useEffect(() => {
+    dispatch(getCars());
+  }, [dispatch]);
   return (
     <div className="content_bottom">
       <div className="bottom_header">
@@ -72,19 +75,31 @@ const Bottom = () => {
             </Panel>
           </Collapse>
         </div>
-        <div className="body_right">
-          <Car1 />
-          <Car2 />
-          <Car3 />
-          <Car4 />
-          <Car5 />
-          <Car6 />
-          <div className="carica">
-            <p className="app_uppercased_text app_700_w app_whiteColor_text">
-              carica altre auto
-            </p>
+
+        {loading ? (
+          <div className="body_right_loader">
+            <div className="row">
+              <div className="col-12">
+                {[...Array(7)].map((_, index) => (
+                  <div key={index} className="col-12">
+                    <CardLoader />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="body_right">
+            {data?.map((car) => (
+              <CarCard key={car?.id} {...car} />
+            ))}
+            <div className="carica">
+              <p className="app_uppercased_text app_700_w app_whiteColor_text">
+                carica altre auto
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
