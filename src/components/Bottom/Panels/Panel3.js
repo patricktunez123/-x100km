@@ -10,7 +10,7 @@ const Panel3 = () => {
       <div className="col-md-6 col-lg-6 col-6">
         <p className="mb-2">
           <Radio className="app_400_w text_18 app_greyFourColor_text">
-            Radio
+            Tutte
           </Radio>
         </p>
         <p className="mb-2">
@@ -18,7 +18,7 @@ const Panel3 = () => {
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
           >
-            Checkbox
+            City Car
           </Checkbox>
         </p>
         <p className="mb-2">
@@ -34,7 +34,15 @@ const Panel3 = () => {
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
           >
-            Checkbox
+            Berlina
+          </Checkbox>
+        </p>
+        <p className="mb-2">
+          <Checkbox
+            className="app_400_w text_18 app_greyFourColor_text"
+            onChange={onChange}
+          >
+            Cabrio
           </Checkbox>
         </p>
       </div>
@@ -44,7 +52,7 @@ const Panel3 = () => {
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
           >
-            Checkbox
+            Coupé
           </Checkbox>
         </p>
         <p className="mb-2">
@@ -52,7 +60,7 @@ const Panel3 = () => {
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
           >
-            Checkbox
+            Station wagon
           </Checkbox>
         </p>
         <p className="mb-2">
@@ -60,7 +68,7 @@ const Panel3 = () => {
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
           >
-            Checkbox
+            Monovolume
           </Checkbox>
         </p>
         <p className="mb-2">
@@ -68,7 +76,7 @@ const Panel3 = () => {
             className="app_400_w text_18 app_greyFourColor_text"
             onChange={onChange}
           >
-            Checkbox
+            Suv/Fuoristrada
           </Checkbox>
         </p>
       </div>

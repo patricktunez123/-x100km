@@ -38,6 +38,10 @@
       //   row-gap: 0.5rem !important;
       // }
     }
+    .body_right_loader {
+      padding-bottom: 2rem;
+      min-width: 65%;
+    }
     .body_right {
       padding-bottom: 2rem;
       min-width: 65%;
@@ -108,6 +112,9 @@
 }
 @media screen and (max-width: $breakpoint-small),
   (max-width: $breakpoint-medium) {
+  .body_right_loader {
+    width: 100vw !important;
+  }
   .content_bottom {
     padding: 0 1rem;
     .bottom_header {
