@@ -55,13 +55,7 @@ const CarCard = ({ color, name, subName, Tipo, Potenza, Cilindrata }) => {
             </div>
           )}
         </div>
-        <div className="car_km">
-          <div className="car_km_number">
-            <p className="app_700_w app_blueTwoColor_text text_24">3,85 </p>
-            <p className="text_16 mb-1">€x100km per le tue abitudini</p>
-          </div>
-          <AiOutlineExclamationCircle />
-        </div>
+
         {color === "blue" ? (
           <>
             <div className="car_km ">
@@ -72,9 +66,26 @@ const CarCard = ({ color, name, subName, Tipo, Potenza, Cilindrata }) => {
               <AiOutlineExclamationCircle />
             </div>
             <Progress percent={45} steps={5} showInfo={false} />
+            <div className="car_km">
+              <div className="car_km_number">
+                <p className="app_700_w app_blueTwoColor_text text_24">3,85 </p>
+                <p className="text_16 mb-1">€x100km per le tue abitudini</p>
+              </div>
+              <AiOutlineExclamationCircle />
+            </div>
+            <Progress percent={45} steps={5} showInfo={false} />
           </>
         ) : (
-          <Progress percent={45} steps={5} showInfo={false} />
+          <>
+            <div className="car_km">
+              <div className="car_km_number">
+                <p className="app_700_w app_blueTwoColor_text text_24">3,85 </p>
+                <p className="text_16 mb-1">€x100km per le tue abitudini</p>
+              </div>
+              <AiOutlineExclamationCircle />
+            </div>
+            <Progress percent={45} steps={5} showInfo={false} />
+          </>
         )}
       </div>
     </div>
