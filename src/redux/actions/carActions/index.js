@@ -11,8 +11,13 @@ export const getCars = () => async (dispatch) => {
       const data = snapshot.docs.map((doc) => ({
         id: doc.id,
         name: doc.data()?.name,
-        details: doc.data()?.details,
-        photoUrl: doc.data()?.photoUrl,
+        Cilindrata: doc.data()?.Cilindrata,
+        Potenza: doc.data()?.Potenza,
+        subName: doc.data()?.subName,
+        color: doc.data()?.color,
+        kms: doc.data()?.kms,
+        Tipo: doc.data()?.Tipo,
+        button: doc.data()?.button,
       }));
 
       dispatch({

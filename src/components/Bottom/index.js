@@ -91,7 +91,7 @@ const Bottom = () => {
         ) : (
           <div className="body_right">
             {data?.map((car) => (
-              <CarCard key={car?.id} {...car} />
+              <CarCard key={car?.id} car={car} {...car} />
             ))}
             <div className="carica">
               <p className="app_uppercased_text app_700_w app_whiteColor_text">
