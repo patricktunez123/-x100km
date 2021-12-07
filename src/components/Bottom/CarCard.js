@@ -3,9 +3,7 @@ import { Button, Progress } from "antd";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import carImage from "../../images/car2.webp";
 
-const CarCard = ({ color, car }) => {
-  console.log("color", color);
-  console.log("car", car);
+const CarCard = ({ color, name, subName, Tipo, Potenza, Cilindrata }) => {
   return (
     <div className="car_card">
       <div className="card_left">
@@ -14,20 +12,21 @@ const CarCard = ({ color, car }) => {
       <div className="card_right">
         <div className="car_name app_mb_1">
           <span className="app_700_w app_greyFourColor_text text_24">
-            VOLKSWAGEN ECO UP!
+            {name && name}
           </span>{" "}
-          <span className="app_400_w text_24">move 5 porte</span>
+          <span className="app_400_w text_24">{subName && subName}</span>
         </div>
         <div className="car_info app_mb_2">
           <div>
             <p className="text_16">
-              Tipo: <span className="app_700_w">Berlina</span>
+              Tipo: <span className="app_700_w">{Tipo && Tipo}</span>
             </p>
             <p className="text_16">
-              Potenza: <span className="app_700_w">150CV | 110kW</span>
+              Potenza: <span className="app_700_w">{Potenza && Potenza}</span>
             </p>
             <p className="text_16">
-              Cilindrata: <span className="app_700_w">1395 cm3</span>
+              Cilindrata:{" "}
+              <span className="app_700_w">{Cilindrata && Cilindrata}</span>
             </p>
           </div>
           {color === "blue" && (
